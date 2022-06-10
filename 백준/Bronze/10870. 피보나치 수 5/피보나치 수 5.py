@@ -1,5 +1,4 @@
-def fibonacci(n):
-    return fibonacci(n-1) + fibonacci(n-2) if n > 1 else n
+def fibonacci(val):
+    return val if val < 2 else fibonacci(val-1) + fibonacci(val-2)
 
-n = int(input())
-print(fibonacci(n))
+print(fibonacci(int(input())))
