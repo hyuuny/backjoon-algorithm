@@ -1,0 +1,10 @@
+def solution(arr):
+    answer = []
+    answer.append(arr[0])
+
+    for i in arr:
+      # answer에 저장된 마지막 값과 다르면 저장
+        if answer[-1] != i:
+            answer.append(i)
+    
+    return answer
