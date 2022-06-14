@@ -1,0 +1,12 @@
+def solution(a, b):
+  # 두 리스트의 각 요소를 곱한 뒤에, 더하자!
+    return sum([a[i] * b[i] for i in range(len(a))])
+
+# 테스트를 위한 코드입니다.
+a = [1,2,3,4]
+b = [-3,-1,0,2]
+print(solution(a, b))
+
+a = [-1,0,1]
+b = [1,0,-1]
+print(solution(a, b))
