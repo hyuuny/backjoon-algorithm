@@ -1,0 +1,16 @@
+def solution(array, commands):
+    _list = []
+    answer = []
+  
+    for i in commands:
+        # 첫번째 ~ 두번째 값으로 새로운 list에 저장
+        _list = array[i[0]-1:i[1]]
+        _list.sort() # 오름차순 정렬
+        answer.append(_list[i[2]-1]) # k번째 값 저장!
+    
+    return answer
+
+# 테스트를 위한 선언입니다
+arr = [1, 5, 2, 6, 3, 7, 4]
+commands = [[2, 5, 3], [4, 4, 1], [1, 7, 3]]
+print(solution(arr, commands))
