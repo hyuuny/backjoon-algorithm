@@ -1,0 +1,10 @@
+def solution(n):
+    answer = 1
+    # 나머지가 1이 될 때까지, 무한루프!
+    while n%answer != 1:
+        answer += 1
+    return answer
+
+# 테스트를 위한 코드입니다.
+print(solution(10))
+print(solution(12))
