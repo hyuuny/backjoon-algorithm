@@ -1,0 +1,18 @@
+def solution(s):
+    p = y = 0
+
+    for word in s.lower():
+        if word == 'p':
+            p += 1
+        elif word == 'y':
+            y += 1
+
+    return True if p == y else False
+
+
+# 테스트를 위한 코드입니다.
+s = "pPoooyY"
+print(solution(s))
+
+s = "Pyy"
+print(solution(s))
