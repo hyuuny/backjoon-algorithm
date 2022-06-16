@@ -1,0 +1,14 @@
+def solution(n):
+    answer = []
+    a = n
+    while (a > 0):
+        b = a % 10
+        a = a // 10
+        answer.append(b)
+
+    return answer
+
+
+# 테스트를 위한 코드입니다.
+n = 12345
+print(solution(n))
