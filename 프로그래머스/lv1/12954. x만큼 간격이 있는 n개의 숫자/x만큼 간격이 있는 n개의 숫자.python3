@@ -1,0 +1,19 @@
+def solution(x, n):
+    answer = []
+    answer.append(x)
+
+    while len(answer) != n:
+        number = answer[-1] # 리스트 마지막 요소 가져와서 n 더하기
+        answer.append(number + x)
+
+    return answer
+
+# 테스트를 위한 코드입니다.
+x, n = 2, 5
+print(solution(x, n))
+
+x, n = 4, 3
+print(solution(x, n))
+
+x, n = -4, 2
+print(solution(x, n))
