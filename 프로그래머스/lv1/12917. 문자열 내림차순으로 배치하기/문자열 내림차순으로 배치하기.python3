@@ -1,0 +1,12 @@
+def solution(s):
+    lowers = []
+    uppers = []
+
+    for word in s:
+        lowers.append(word) if word.islower() else uppers.append(word)
+
+    return "".join(sorted(lowers, reverse=True) + sorted(uppers, reverse=True))
+
+
+# 테스트를 위한 코드입니다.
+print(solution("Zbcdefg"))
