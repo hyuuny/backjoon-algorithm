@@ -1,0 +1,9 @@
+def solution(phone_number):
+    answer = []
+    for i in range(len(phone_number)):
+        answer.append("*") if i <= (len(phone_number) - 5) else answer.append(phone_number[i])
+    return "".join(answer)
+
+
+print(solution("01033334444"))
+print(solution("027778888"))
