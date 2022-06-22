@@ -1,0 +1,11 @@
+def solution(seoul):
+    answer = 0
+
+    for idx, name in enumerate(seoul):
+        if name == 'Kim':
+            answer = idx
+    return "김서방은 " + str(answer) + "에 있다"
+
+
+# 테스트 코드입니다.
+print(solution(["Jane", "Kim"]))
