@@ -1,0 +1,1 @@
+print("".join([x[0:1] for x in (list(map(str, input().split('-'))))]))
