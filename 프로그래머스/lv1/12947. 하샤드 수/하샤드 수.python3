@@ -1,0 +1,10 @@
+def solution(x):
+    sum_val = sum([int(i) for i in str(x)])
+    return True if x % sum_val == 0 else False
+
+
+print(solution(10))
+print(solution(12))
+print(solution(11))
+print(solution(13))
+print(solution(18))
