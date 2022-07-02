@@ -6,7 +6,7 @@ def odd_or_even(answer, i, j):
 
 
 def solution(s):
-    words = s.lower().split(" ")
+    words = s.split(" ")
     answer = []
     for i in words:
         for j in range(len(i)):
