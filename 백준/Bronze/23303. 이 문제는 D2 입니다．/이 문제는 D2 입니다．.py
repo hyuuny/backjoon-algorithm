@@ -1,0 +1,1 @@
+print('D2') if input().upper().count('D2') > 0 else print('unrated')
